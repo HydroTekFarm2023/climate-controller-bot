@@ -37,6 +37,9 @@ void boot_sequence() {
 	// Start as grow cycle inactive by default
 	is_grow_active = false;
 
+	// Init ota
+	init_ota();
+
 	// Init nvs
 	nvs_clear();
 	init_nvs();
